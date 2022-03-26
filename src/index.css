@@ -5,6 +5,17 @@
 .root,
 #root,
 #docs-root {
+  @apply light;
+}
+
+.dark {
+  --primary: #ffffff;
+  --secondary: #edf2f7;
+  --background: #333333;
+  --accent: #3984ff;
+}
+
+.light {
   --primary: #505050;
   --secondary: #000;
   --background: #e5e5e5;
