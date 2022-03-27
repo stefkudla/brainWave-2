@@ -1,16 +1,11 @@
 import React from 'react';
-import { Navbar, CTA } from './components';
-import { Header, Features, Footer } from './containers';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App bg-background">
       <div className="container mx-auto">
-        <Navbar />
-        <Header />
-        <Features />
-        <CTA />
-        <Footer />
+        <Home />
       </div>
     </div>
   );

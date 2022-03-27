@@ -4,7 +4,7 @@ import heroImage from '../assets/brainWave-Hero.png';
 const Header = () => {
   return (
     <div className="">
-      <div className="flex flex-col mt-10 h-5/6 border-b border-accent items-center px-4 sm:px-1">
+      <div className="flex flex-col  h-5/6 border-b border-accent items-center px-4 pt-8 sm:px-1">
         <div className="sm:mt-12 sm:flex-1 self-start">
           <h1 className="pr-16 text-4xl sm:text-5xl font-inter text-primary">
             A Better Way to Train Your Brain
