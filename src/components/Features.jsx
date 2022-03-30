@@ -1,5 +1,5 @@
 import React from 'react';
-import FeatureCard from '../components/FeatureCard';
+import FeatureCard from './FeatureCard';
 import Human1 from '../assets/Human-01.png';
 import Human2 from '../assets/Human-02.png';
 import Human3 from '../assets/Human-03.png';

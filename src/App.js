@@ -1,11 +1,14 @@
 import React from 'react';
-import Home from './pages/Home';
+import { Header, CTA, Features, Footer } from './components';
 
 function App() {
   return (
-    <div className="App bg-background">
-      <div className="container mx-auto">
-        <Home />
+    <div className="bg-background">
+      <div className="container mx-auto min-h-screen">
+        <Header />
+        <Features />
+        <CTA />
+        <Footer />
       </div>
     </div>
   );

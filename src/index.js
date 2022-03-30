@@ -2,9 +2,9 @@ import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
+import Navbar from './components/Navbar';
+import Blog from './pages/Blog';
 import './index.css';
-import { Navbar, CTA } from './components';
-import Blog from './components/Blog';
 
 render(
   <React.StrictMode>
