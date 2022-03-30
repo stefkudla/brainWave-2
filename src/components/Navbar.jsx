@@ -36,7 +36,9 @@ const Navbar = () => {
     <div className="bg-background">
       <nav className="container mx-auto h-16 flex justify-between items-center px-2 sm:py-2">
         <div>
-          <img src={logo} alt="brainwave logo" className="" />
+          <Link to="/">
+            <img src={logo} alt="brainwave logo" className="" />
+          </Link>
         </div>
 
         <div className="hidden md:block">
@@ -44,12 +46,12 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <button
-            href=""
+          <Link
+            to="/pathways"
             className="bg-accent rounded-sm py-3 px-8 transition
           hover:text-slate-100 text-white hover:bg-slate-800 font-medium">
             Get Started
-          </button>
+          </Link>
         </div>
 
         <div className="block md:hidden relative">
@@ -71,12 +73,14 @@ const Navbar = () => {
           {toggleMenu && (
             <div className="absolute top-6 right-0 bg-slate-50 px-6 py-4 rounded-sm transition-all shadow-md text-center">
               <Menu />
-              <button
-                href=""
-                className="bg-accent rounded-sm px-8 py-2 transition
-            hover:text-slate-100 text-white hover:bg-slate-800 mt-4 whitespace-nowrap font-medium">
-                Get Started
-              </button>
+              <div className="mt-4 ">
+                <Link
+                  to="/pathways"
+                  className="bg-accent rounded-sm px-7 py-3 transition
+            hover:text-slate-100 text-white hover:bg-slate-800 whitespace-nowrap font-medium">
+                  Get Started
+                </Link>
+              </div>
             </div>
           )}
         </div>

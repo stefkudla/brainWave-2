@@ -1,5 +1,6 @@
 import React from 'react';
 import heroImage from '../assets/brainWave-Hero.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -14,9 +15,13 @@ const Header = () => {
             Anything you wish to learn can be learned with brainWave Scroll down
             to learn more!
           </p>
-          <button className="mt-8 transition-all sm:text-lg bg-accent px-8 py-3 text-white rounded-sm font-medium hover:opacity-80">
-            Start learning
-          </button>
+          <div className="mt-8">
+            <Link
+              to="/blog"
+              className="mt-8 transition-all sm:text-lg bg-accent px-8 py-3 text-white rounded-sm font-medium hover:opacity-80">
+              Start learning
+            </Link>
+          </div>
         </div>
 
         <div className="self-center justify-self-end mt-24">
