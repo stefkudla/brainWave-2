@@ -1,7 +1,7 @@
 import React from 'react';
-import { Footer } from '../components';
-import BlogHeader from '../components/BlogHeader';
-import PostList from '../components/PostList';
+import { Footer } from '../../components';
+import BlogHeader from '../../components/BlogHeader';
+import PostList from '../../components/PostList';
 
 const Blog = () => {
   return (

@@ -9,18 +9,19 @@ const Menu = () => {
       <div className="text-primary flex flex-col md:flex-row gap-y-2 md:gap-x-6">
         <Link
           to="/"
-          className="transition-all  hover:text-gray-900 hover:bg-slate-50 p-2 rounded">
+          className="transition-all  hover:text-gray-900 hover:bg-blue-400 p-2
+           rounded">
           Home
         </Link>
         <Link
           to="/pathways"
-          className="transition  hover:text-gray-900 hover:bg-slate-50 p-2 rounded">
+          className="transition  hover:text-gray-900 hover:bg-blue-400 p-2 rounded">
           Pathways
         </Link>
 
         <Link
           to="/blog"
-          className="transition  hover:text-gray-900 hover:bg-slate-50 p-2 rounded">
+          className="transition  hover:text-gray-900 hover:bg-blue-400 p-2 rounded">
           Blog
         </Link>
       </div>
