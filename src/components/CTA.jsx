@@ -3,13 +3,13 @@ import React from 'react';
 const CTA = () => {
   return (
     <div>
-      <div className="container mt-20 flex flex-col items-center text-center px-4">
+      <div className="container my-16 flex flex-col items-center text-center px-4">
         <h2 className="text-5xl text-gray-900">Ready to join the fun?</h2>
         <p className="my-6 text-center text-primary">
           brainWave is a comprehensive learning platform that gives users the
           opportunity to learn whenever they want, wherever they want!
         </p>
-        <form className="shadow-lg">
+        <form className="shadow-lg mt-4">
           <input
             type="email"
             placeholder="Email Adress"

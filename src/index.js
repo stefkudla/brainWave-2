@@ -10,14 +10,7 @@ import './index.css';
 render(
   <React.StrictMode>
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/blog" element={<Blog />}>
-          <Route path=":postId" element={<Blog />} />
-        </Route>
-        <Route path="/pathways" element={<Pathways />} />
-      </Routes>
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

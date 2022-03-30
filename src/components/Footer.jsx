@@ -4,7 +4,7 @@ import logo from '../assets/brainWave-logo.png';
 const Footer = () => {
   return (
     <div>
-      <div className="mt-12 pt-12 px-8 pb-4 mx-auto border-t-2 border-slate-300">
+      <div className="bg-background pt-12 px-8 pb-4 mx-auto border-t-2 border-slate-300">
         <div className="grid grid-cols-1 md:flex md:justify-between items-center place-items-start gap-8 sm:gap-14">
           <div className="">
             <img src={logo} />

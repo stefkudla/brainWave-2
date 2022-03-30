@@ -1,16 +1,19 @@
 import React from 'react';
-import { Header, CTA, Features, Footer } from './components';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Blog from './pages/blog/Blog';
+import Home from './pages/Home';
+import Pathways from './pages/Pathways';
 
 function App() {
   return (
-    <div className="bg-background">
-      <div className="container mx-auto min-h-screen md:px-2 lg:px-0">
-        <Header />
-        <Features />
-        <CTA />
-        <Footer />
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="blog" element={<Blog />}></Route>
+        <Route path="/pathways" element={<Pathways />} />
+      </Route>
+    </Routes>
   );
 }
 
