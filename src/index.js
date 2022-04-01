@@ -6,11 +6,14 @@ import Navbar from './components/Navbar';
 import Blog from './pages/blog/Blog';
 import Pathways from './pages/Pathways';
 import './index.css';
+import ScrollToTop from './components/ScrollToTop';
 
 render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ScrollToTop>
+        <App />
+      </ScrollToTop>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
