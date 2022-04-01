@@ -1,19 +1,26 @@
-import React from 'react';
-import cardImage from '../assets/blog-image-1.jpg';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import BlogPost from './BlogPost';
 
-const BlogPost = ({ imgSrc, title, date, excerpt }) => {
+const BlogPostCard = ({ post }) => {
+  const formatSlug = (title) => title.toLowerCase().replace(/ /g, '-');
+
   return (
     <div>
       <div className="container flex flex-col gap-y-2 max-w-sm">
-        <img src={imgSrc} className="max-w-xs" />
-        <p className="text-xs text-primary">{date}</p>
-        <h4 className="font-medium text-lg cursor-pointer hover:opacity-60 transition-all w-fit">
-          {title}
-        </h4>
-        <p className="text-md text-primary pr-16">{excerpt}</p>
+        <img src={post.imgSrc} className="max-w-xs" />
+        <p className="text-xs text-primary">{post.dateTime}</p>
+        <Link
+          to={`/${formatSlug(post.title)}`}
+          className="font-medium text-lg cursor-pointer hover:opacity-60 transition-all w-fit">
+          {post.title}
+        </Link>
+        <p className="text-md text-primary pr-16">{post.body}</p>
       </div>
     </div>
   );
 };
 
-export default BlogPost;
+export default BlogPostCard;
+
+// post.title.toLowerCase().replace(/ /g, '-')

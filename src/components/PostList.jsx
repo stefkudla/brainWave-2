@@ -1,51 +1,35 @@
 import React from 'react';
+import BlogPost from './BlogPost';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import BlogPostCard from './BlogPostCard';
 import blogImage1 from '../assets/blog-image-1.jpg';
 import blogImage2 from '../assets/blog-image-2.jpg';
-import blogImage3 from '../assets/blog-image-3.jpg';
-import blogImage4 from '../assets/blog-image-4.jpg';
 
-const PostList = () => {
+const PostList = ({ posts }) => {
+  const featuredPost = posts[0];
+  console.log(featuredPost);
+
   return (
     <div>
+      <div className="flex flex-col md:flex-row my-6 gap-x-8">
+        <div className="">
+          <img src={featuredPost.imgSrc} className="lg:max-w-3xl" />
+        </div>
+        <div className="flex flex-col items-start gap-y-2 lg:gap-y-6 mt-4 md:mt-0 mr-4">
+          <p className="text-gray-400">{featuredPost.dateTime}</p>
+          <h2 className="text-3xl">{featuredPost.title}</h2>
+          <p>{featuredPost.body}</p>
+          <a className="text-accent underline cursor-pointer hover:opacity-60 transition-all">
+            Read More
+          </a>
+        </div>
+      </div>
       <div className="w-full mx-auto my-24">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-24 place-items-center">
-          <BlogPostCard
-            imgSrc={blogImage1}
-            date="03/29/2022"
-            title="Post 2"
-            excerpt="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis vitae sunt mollitia eaque minima adipisci obcaecati doloremque voluptatem nobis."
-          />
-          <BlogPostCard
-            imgSrc={blogImage2}
-            date="03/29/2022"
-            title="Post 3"
-            excerpt="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis vitae sunt mollitia eaque minima adipisci obcaecati doloremque voluptatem nobis."
-          />
-          <BlogPostCard
-            imgSrc={blogImage1}
-            date="03/29/2022"
-            title="Post 4"
-            excerpt="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis vitae sunt mollitia eaque minima adipisci obcaecati doloremque voluptatem nobis."
-          />
-          <BlogPostCard
-            imgSrc={blogImage2}
-            date="03/29/2022"
-            title="Post 5"
-            excerpt="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis vitae sunt mollitia eaque minima adipisci obcaecati doloremque voluptatem nobis."
-          />
-          <BlogPostCard
-            imgSrc={blogImage1}
-            date="03/29/2022"
-            title="Post 6"
-            excerpt="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis vitae sunt mollitia eaque minima adipisci obcaecati doloremque voluptatem nobis."
-          />
-          <BlogPostCard
-            imgSrc={blogImage2}
-            date="03/29/2022"
-            title="Post 1"
-            excerpt="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis vitae sunt mollitia eaque minima adipisci obcaecati doloremque voluptatem nobis."
-          />
+          {posts.map((post) => (
+            <BlogPostCard key={post.id} post={post} />
+          ))}
         </div>
       </div>
     </div>

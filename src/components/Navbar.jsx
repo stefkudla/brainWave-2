@@ -3,34 +3,33 @@ import { Outlet, Link } from 'react-router-dom';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../assets/brainWave-logo.png';
 
-const Menu = () => {
-  return (
-    <>
-      <div className="text-primary flex flex-col md:flex-row gap-y-2 md:gap-x-6">
-        <Link
-          to="/"
-          className="transition-all  hover:text-gray-900 hover:bg-blue-400 p-2
-           rounded">
-          Home
-        </Link>
-        <Link
-          to="/pathways"
-          className="transition  hover:text-gray-900 hover:bg-blue-400 p-2 rounded">
-          Pathways
-        </Link>
-
-        <Link
-          to="/blog"
-          className="transition  hover:text-gray-900 hover:bg-blue-400 p-2 rounded">
-          Blog
-        </Link>
-      </div>
-    </>
-  );
-};
-
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const Menu = () => {
+    const menuItems = [
+      { name: 'Home', path: '/' },
+      { name: 'Pathways', path: '/pathways' },
+      { name: 'Blog', path: '/blog' },
+    ];
+
+    return (
+      <div>
+        <div className="text-primary flex flex-col md:flex-row gap-y-2 md:gap-x-6">
+          {menuItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className="transition-all  hover:text-gray-900 hover:bg-blue-400 p-2
+             rounded"
+              onClick={() => setToggleMenu(false)}>
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className="bg-background">
@@ -77,7 +76,8 @@ const Navbar = () => {
                 <Link
                   to="/pathways"
                   className="bg-accent rounded-sm px-7 py-3 transition
-            hover:text-slate-100 text-white hover:bg-slate-800 whitespace-nowrap font-medium">
+            hover:text-slate-100 text-white hover:bg-slate-800 whitespace-nowrap font-medium"
+                  onClick={() => setToggleMenu(false)}>
                   Get Started
                 </Link>
               </div>
