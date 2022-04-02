@@ -1,5 +1,4 @@
 import React from 'react';
-import img1 from '../assets/Human-01.png';
 
 const FeatureCard = ({ imgUrl, title }) => {
   return (

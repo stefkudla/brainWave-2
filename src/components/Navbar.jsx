@@ -1,5 +1,5 @@
-import React, { Fragment, useState } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../assets/brainWave-logo.png';
 

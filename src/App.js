@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import BlogPost from './components/BlogPost';
-import BlogPostCard from './components/BlogPostCard';
 import Layout from './components/Layout';
 import Blog from './pages/blog/Blog';
 import Home from './pages/Home';

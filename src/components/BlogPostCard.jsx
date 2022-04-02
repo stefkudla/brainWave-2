@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import BlogPost from './BlogPost';
 
 const BlogPostCard = ({ post }) => {
   const formatSlug = (title) => title.toLowerCase().replace(/ /g, '-');
@@ -8,7 +7,7 @@ const BlogPostCard = ({ post }) => {
   return (
     <div>
       <div className="container flex flex-col gap-y-2 max-w-sm">
-        <img src={post.imgSrc} className="max-w-xs" />
+        <img src={post.imgSrc} className="max-w-xs" alt={post.title} />
         <p className="text-xs text-gray-400">{post.dateTime}</p>
         <Link
           to={`/${formatSlug(post.title)}`}

@@ -1,10 +1,6 @@
 import React from 'react';
-import BlogPost from './BlogPost';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import BlogPostCard from './BlogPostCard';
-import blogImage1 from '../assets/blog-image-1.jpg';
-import blogImage2 from '../assets/blog-image-2.jpg';
 
 const PostList = ({ posts }) => {
   const featuredPost = posts[0];
@@ -16,7 +12,11 @@ const PostList = ({ posts }) => {
     <div>
       <div className="flex flex-col md:flex-row my-6 gap-x-8">
         <div className="">
-          <img src={featuredPost.imgSrc} className="lg:max-w-3xl" />
+          <img
+            src={featuredPost.imgSrc}
+            className="lg:max-w-3xl"
+            alt={featuredPost.title}
+          />
         </div>
         <div className="flex flex-col items-start gap-y-2 lg:gap-y-6 mt-4 md:mt-0 mr-4">
           <p className="text-gray-400">{featuredPost.dateTime}</p>

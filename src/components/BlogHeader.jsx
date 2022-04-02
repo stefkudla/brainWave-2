@@ -1,6 +1,5 @@
 import React from 'react';
 import blogHero from '../assets/blog-hero.jpg';
-import { Link } from 'react-router-dom';
 
 const BlogHeader = ({ post }) => {
   return (
