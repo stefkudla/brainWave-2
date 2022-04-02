@@ -8,7 +8,9 @@ import blogImage2 from '../assets/blog-image-2.jpg';
 
 const PostList = ({ posts }) => {
   const featuredPost = posts[0];
+  const mainPosts = posts.slice(1);
   console.log(featuredPost);
+  const formatSlug = (title) => title.toLowerCase().replace(/ /g, '-');
 
   return (
     <div>
@@ -18,16 +20,17 @@ const PostList = ({ posts }) => {
         </div>
         <div className="flex flex-col items-start gap-y-2 lg:gap-y-6 mt-4 md:mt-0 mr-4">
           <p className="text-gray-400">{featuredPost.dateTime}</p>
-          <h2 className="text-3xl">{featuredPost.title}</h2>
+          <Link
+            to={`/${formatSlug(featuredPost.title)}`}
+            className="cursor-pointer hover:opacity-60 transition-all w-fit">
+            <h2 className="text-3xl">{featuredPost.title}</h2>
+          </Link>
           <p>{featuredPost.body}</p>
-          <a className="text-accent underline cursor-pointer hover:opacity-60 transition-all">
-            Read More
-          </a>
         </div>
       </div>
       <div className="w-full mx-auto my-24">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-24 place-items-center">
-          {posts.map((post) => (
+          {mainPosts.map((post) => (
             <BlogPostCard key={post.id} post={post} />
           ))}
         </div>

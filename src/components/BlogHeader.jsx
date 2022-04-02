@@ -2,7 +2,7 @@ import React from 'react';
 import blogHero from '../assets/blog-hero.jpg';
 import { Link } from 'react-router-dom';
 
-const BlogHeader = () => {
+const BlogHeader = ({ post }) => {
   return (
     <div>
       <div className="flex flex-col md:flex-row my-6 gap-x-8">

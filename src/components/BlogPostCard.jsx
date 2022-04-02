@@ -9,7 +9,7 @@ const BlogPostCard = ({ post }) => {
     <div>
       <div className="container flex flex-col gap-y-2 max-w-sm">
         <img src={post.imgSrc} className="max-w-xs" />
-        <p className="text-xs text-primary">{post.dateTime}</p>
+        <p className="text-xs text-gray-400">{post.dateTime}</p>
         <Link
           to={`/${formatSlug(post.title)}`}
           className="font-medium text-lg cursor-pointer hover:opacity-60 transition-all w-fit">

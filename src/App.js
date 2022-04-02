@@ -8,8 +8,13 @@ import Blog from './pages/blog/Blog';
 import Home from './pages/Home';
 import Pathways from './pages/Pathways';
 import blogFeaturedImg from './assets/blog-hero.jpg';
-import blogImage1 from './assets/blog-image-1.jpg';
-import blogImage2 from './assets/blog-image-2.jpg';
+import {
+  blogImage1,
+  blogImage2,
+  blogImage3,
+  blogImage4,
+  blogImage5,
+} from './assets/';
 
 function App() {
   const [posts, setPosts] = useState([
@@ -39,10 +44,26 @@ function App() {
     },
     {
       id: 3,
-      imgSrc: blogImage1,
+      imgSrc: blogImage5,
       title: 'How Gears of War Taught Me Calculus',
       author: 'Milton',
       dateTime: 'March 30, 2022',
+      body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis, quia iusto, pariatur delectus perspiciatis temporibus id maxime cum necessitatibus minus? Sit quod nostrum in laborum consequatur nisi dicta tempora.',
+    },
+    {
+      id: 4,
+      imgSrc: blogImage4,
+      title: 'Morpheus Technique',
+      author: 'Mr. Anderson',
+      dateTime: 'April 1, 2022',
+      body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis, quia iusto, pariatur delectus perspiciatis temporibus id maxime cum necessitatibus minus? Sit quod nostrum in laborum consequatur nisi dicta tempora.',
+    },
+    {
+      id: 5,
+      imgSrc: blogImage3,
+      title: 'Lo-fi Coffee Study',
+      author: 'Lo-fi Ry',
+      dateTime: 'April 1, 2022',
       body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis, quia iusto, pariatur delectus perspiciatis temporibus id maxime cum necessitatibus minus? Sit quod nostrum in laborum consequatur nisi dicta tempora.',
     },
   ]);

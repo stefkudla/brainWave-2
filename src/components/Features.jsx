@@ -15,7 +15,7 @@ const Features = () => {
           brainWave is a comprehensive learning platform that gives users the
           opportunity to learn whenever they want, wherever they want!
         </p>
-        <div className="gap-y-10 flex flex-col sm:flex-row sm:gap-x-6 items-center sm:justify-evenly mt-16">
+        <div className="gap-y-10 flex flex-col sm:flex-row sm:gap-x-2 items-center sm:justify-evenly mt-16">
           <FeatureCard imgUrl={Human1} title={'Academics'} />
           <FeatureCard imgUrl={Human2} title={'Track your progress'} />
           <FeatureCard imgUrl={Human3} title={'Connect with friends'} />
