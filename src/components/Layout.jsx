@@ -8,7 +8,7 @@ const Layout = () => {
     <div className="App">
       <Navbar />
       <div className="bg-background">
-        <div className="container mx-auto min-h-screen p-3">
+        <div className="mx-auto min-h-screen p-1">
           <Outlet />
         </div>
       </div>

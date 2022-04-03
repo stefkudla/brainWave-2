@@ -9,7 +9,7 @@ const BlogPost = ({ post }) => {
   );
 
   return (
-    <article className="container max-w-4xl mx-auto px-1 sm:px-0">
+    <article className="container lg:max-w-4xl mx-auto px-2 sm:px-0">
       <div className="w-fit">
         <Link to="/blog">
           <div className="mb-2 hover:text-accent hover:opacity-50 hover:translate-x-1 transition-all">

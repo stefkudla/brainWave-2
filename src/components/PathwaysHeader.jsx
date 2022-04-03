@@ -4,8 +4,8 @@ import pathwayHero from '../assets/pathways-hero.png';
 const PathwaysHeader = () => {
   return (
     <div>
-      <div className="flex flex-col lg:flex-row justify-between">
-        <div className="flex flex-col md:flex-row lg:flex-col mt-6 md:mt-16 flex-2">
+      <div className="flex flex-col xl:flex-row justify-between">
+        <div className="flex flex-col md:flex-row xl:flex-col mt-6 md:mt-16 flex-2">
           <div>
             <h1 className="text-3xl sm:text-5xl text-primary sm:mt-4">
               Grow Your Skills,
@@ -28,7 +28,7 @@ const PathwaysHeader = () => {
               </button>
             </div>
           </div>
-          <div className="flex md:flex-col md:justify-between lg:flex-row md:ml-16 lg:ml-0 gap-x-6 mt-8 lg:mt-16">
+          <div className="flex md:flex-col md:justify-between xl:flex-row md:ml-16 lg:ml-32 xl:ml-0 gap-x-6 mt-8 xl:mt-16">
             <div>
               <p className="font-bold text-slate-800 text-xl md:text-2xl">
                 40k+

@@ -3,7 +3,7 @@ import { CTA, Features, Header } from '../components';
 
 const Home = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <Header />
       <Features />
       <CTA />

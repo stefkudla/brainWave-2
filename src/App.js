@@ -73,7 +73,9 @@ function App() {
         <Route index element={<Home />} />
         <Route path="blog" element={<Blog posts={posts} />} />
         <Route path="/:postID" element={<BlogPost post={posts} />} />
-        <Route path="/pathways" element={<Pathways />} />
+        <Route path="/pathways" element={<Pathways />}>
+          <Route path="/pathways/:category" element={<Home />} />
+        </Route>
       </Route>
     </Routes>
   );
