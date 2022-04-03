@@ -1,10 +1,19 @@
 import { MdPlayCircle } from 'react-icons/md';
 import pathwayHero from '../assets/pathways-hero.png';
+import floatingBooks from '../assets/floating-books.mp4';
+import { useState } from 'react';
+import { RiCloseLine } from 'react-icons/ri';
 
 const PathwaysHeader = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const playVideo = () => {
+    setIsOpen(true);
+    console.log(isOpen);
+  };
+
   return (
     <div>
-      <div className="flex flex-col xl:flex-row justify-between">
+      <div className="relative flex flex-col xl:flex-row justify-center">
         <div className="flex flex-col md:flex-row xl:flex-col mt-6 md:mt-16 flex-2">
           <div>
             <h1 className="text-3xl sm:text-5xl text-primary sm:mt-4">
@@ -20,7 +29,9 @@ const PathwaysHeader = () => {
               <button className="text-sm font-medium text-white bg-accent rounded-sm px-7 py-3  hover:opacity-70 transition mr-8 whitespace-nowrap">
                 Explore Pathways
               </button>
-              <button className="flex items-center hover:opacity-70 transition-all">
+              <button
+                className="flex items-center hover:opacity-70 transition-all"
+                onClick={playVideo}>
                 <span className="inline text-2xl mr-3 border border-accent border-1 rounded-full">
                   <MdPlayCircle />
                 </span>
@@ -52,6 +63,19 @@ const PathwaysHeader = () => {
         <div>
           <img src={pathwayHero} />
         </div>
+        {isOpen && (
+          <div className="absolute self-center">
+            <video autoPlay width="340" className="">
+              <source src={floatingBooks} />
+            </video>
+            <RiCloseLine
+              color="#333"
+              size={27}
+              onClick={() => setIsOpen(false)}
+              className="absolute top-1 right-0 cursor-pointer"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
