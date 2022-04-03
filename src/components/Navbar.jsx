@@ -20,7 +20,7 @@ const Navbar = () => {
             <Link
               key={item.name}
               to={item.path}
-              className="transition-all  hover:text-gray-900 hover:bg-blue-400 p-2
+              className="transition-all  hover:text-white hover:bg-blue-400 p-2
              rounded"
               onClick={() => setToggleMenu(false)}>
               {item.name}
