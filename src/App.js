@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import BlogPost from './components/BlogPost';
 import Layout from './components/Layout';
-import Blog from './pages/blog/Blog';
+import Blog from './pages/Blog';
 import Home from './pages/Home';
 import Pathways from './pages/Pathways';
 import blogFeaturedImg from './assets/blog-hero.jpg';

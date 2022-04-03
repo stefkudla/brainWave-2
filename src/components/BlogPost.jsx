@@ -10,13 +10,15 @@ const BlogPost = ({ post }) => {
 
   return (
     <article className="container max-w-4xl mx-auto px-1 sm:px-0">
-      <Link to="/blog">
-        <div className="mb-2 hover:text-accent hover:opacity-50 hover:translate-x-1 transition-all">
-          <span className="text-xs">
-            <MdArrowBack className="inline" /> Blog Home
-          </span>
-        </div>
-      </Link>
+      <div className="w-fit">
+        <Link to="/blog">
+          <div className="mb-2 hover:text-accent hover:opacity-50 hover:translate-x-1 transition-all">
+            <span className="text-xs">
+              <MdArrowBack className="inline" /> Blog Home
+            </span>
+          </div>
+        </Link>
+      </div>
       <p className="text-primary text-sm">{currentPost.dateTime}</p>
       <h1 className="text-3xl text-primary">{currentPost.title}</h1>
       <p className="text-primary">By: {currentPost.author}</p>
