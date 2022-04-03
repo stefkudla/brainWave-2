@@ -27,7 +27,7 @@ function App() {
     },
     {
       id: 1,
-      imgSrc: blogImage1,
+      imgSrc: blogImage5,
       title: 'Coloring Books Trigonometry',
       author: 'Marcus Colson',
       dateTime: 'March 30, 2022',
@@ -35,7 +35,7 @@ function App() {
     },
     {
       id: 2,
-      imgSrc: blogImage2,
+      imgSrc: blogImage4,
       title: 'brainWave Benny',
       author: 'Benny Thomas',
       dateTime: 'March 30, 2022',

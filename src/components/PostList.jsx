@@ -29,7 +29,7 @@ const PostList = ({ posts }) => {
         </div>
       </div>
       <div className="w-full mx-auto my-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-24 place-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-24 justify-center">
           {mainPosts.map((post) => (
             <BlogPostCard key={post.id} post={post} />
           ))}
