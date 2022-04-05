@@ -22,7 +22,7 @@ const Navbar = () => {
               to={item.path}
               className="transition-all  hover:text-white hover:bg-blue-400 p-2
              rounded"
-              onClick={() => setToggleMenu(false)}>
+              onClick={() => setToggleMenu(!toggleMenu)}>
               {item.name}
             </Link>
           ))}

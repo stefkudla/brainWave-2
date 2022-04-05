@@ -13,7 +13,7 @@ const PathwaysHeader = () => {
 
   return (
     <div>
-      <div className="relative flex flex-col xl:flex-row justify-center">
+      <div className="flex flex-col xl:flex-row justify-center">
         <div className="flex flex-col md:flex-row xl:flex-col mt-6 md:mt-16 flex-2">
           <div>
             <h1 className="text-3xl sm:text-5xl text-primary sm:mt-4">
