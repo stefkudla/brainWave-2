@@ -61,7 +61,7 @@ const PathwaysHeader = () => {
           </div>
         </div>
         <div>
-          <img src={pathwayHero} />
+          <img src={pathwayHero} alt="pathway header" />
         </div>
         {isOpen && (
           <div className="absolute self-center">

@@ -5,7 +5,6 @@ import BlogPostCard from './BlogPostCard';
 const PostList = ({ posts }) => {
   const featuredPost = posts[0];
   const mainPosts = posts.slice(1);
-  console.log(featuredPost);
   const formatSlug = (title) => title.toLowerCase().replace(/ /g, '-');
 
   return (

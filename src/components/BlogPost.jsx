@@ -5,7 +5,7 @@ const BlogPost = ({ post }) => {
   const formatSlug = (title) => title.toLowerCase().replace(/ /g, '-');
   const currentUrl = useLocation().pathname;
   const currentPost = post.find(
-    (post) => `/${formatSlug(post.title)}` == currentUrl
+    (post) => `/${formatSlug(post.title)}` === currentUrl
   );
 
   return (
@@ -22,7 +22,11 @@ const BlogPost = ({ post }) => {
       <p className="text-primary text-sm">{currentPost.dateTime}</p>
       <h1 className="text-3xl text-primary">{currentPost.title}</h1>
       <p className="text-primary">By: {currentPost.author}</p>
-      <img src={currentPost.imgSrc} className="max-w-full md:max-w-xl my-4" />
+      <img
+        src={currentPost.imgSrc}
+        alt={currentPost.title}
+        className="max-w-full md:max-w-xl my-4"
+      />
       <p>{currentPost.body}</p>
     </article>
   );
