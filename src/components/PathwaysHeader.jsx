@@ -8,7 +8,6 @@ const PathwaysHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const playVideo = () => {
     setIsOpen(true);
-    console.log(isOpen);
   };
 
   return (
