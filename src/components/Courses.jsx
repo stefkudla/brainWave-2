@@ -56,7 +56,7 @@ const Courses = () => {
         </div>
       </div>
       <div className="">
-        <CourseList />
+        <CourseList filter={selectedCategory} />
       </div>
     </div>
   );
