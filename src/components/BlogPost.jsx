@@ -1,8 +1,8 @@
 import { useLocation, Link } from 'react-router-dom';
 import { MdArrowBack } from 'react-icons/md';
+import { formatSlug } from '../util/Helper';
 
 const BlogPost = ({ post }) => {
-  const formatSlug = (title) => title.toLowerCase().replace(/ /g, '-');
   const currentUrl = useLocation().pathname;
   const currentPost = post.find(
     (post) => `/${formatSlug(post.title)}` === currentUrl

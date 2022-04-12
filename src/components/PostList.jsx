@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BlogPostCard from './BlogPostCard';
+import { formatSlug } from '../util/Helper';
 
 const PostList = ({ posts }) => {
   const featuredPost = posts[0];
   const mainPosts = posts.slice(1);
-  const formatSlug = (title) => title.toLowerCase().replace(/ /g, '-');
 
   return (
     <div>

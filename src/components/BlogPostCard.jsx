@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { formatSlug } from '../util/Helper';
 
 const BlogPostCard = ({ post }) => {
-  const formatSlug = (title) => title.toLowerCase().replace(/ /g, '-');
-
   return (
     <div>
       <div className="container flex flex-col max-w-sm mx-auto border border-blue-200 rounded-md">
