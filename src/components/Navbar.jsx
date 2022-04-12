@@ -45,9 +45,12 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
+          <a className="text-slate-800 hover:opacity-60 font-medium cursor-pointer mr-6 transition-all">
+            Log in
+          </a>
           <Link
             to="/pathways"
-            className="bg-accent rounded-sm py-3 px-8 transition
+            className="bg-accent rounded-sm py-3 px-6 transition
           hover:text-slate-100 text-white hover:bg-slate-800 font-medium">
             Get Started
           </Link>

@@ -109,7 +109,7 @@ const CourseList = ({ filter }) => {
       id: 10,
       title: 'Smart Watch React App',
       desc: 'Morpheus take the lead show the way new course structure',
-      category: 'Music',
+      category: 'Software',
       price: '70.00',
       author: 'stef kudla',
       lessons: 10,

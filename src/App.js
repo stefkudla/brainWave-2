@@ -14,6 +14,8 @@ import {
   blogImage4,
   blogImage5,
 } from './assets/';
+import CourseCard from './components/CourseCard';
+import Courses from './components/Courses';
 
 function App() {
   const [posts, setPosts] = useState([

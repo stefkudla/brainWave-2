@@ -30,17 +30,6 @@
   cursor: pointer;
 }
 
-/* .active-category::after {
-  position: absolute;
-  content: '';
-  bottom: 1px;
-  left: 0;
-
-  width: 100%;
-  height: 2px;
-  background-color: rgb(68, 221, 165);
-} */
-
 @layer base {
   html {
     font-family: Roboto, sans-serif;
