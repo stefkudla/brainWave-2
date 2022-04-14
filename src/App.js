@@ -6,16 +6,15 @@ import Layout from './components/Layout';
 import Blog from './pages/Blog';
 import Home from './pages/Home';
 import Pathways from './pages/Pathways';
-import blogFeaturedImg from './assets/blog-hero.jpg';
+import Login from './pages/Login';
 import {
+  blogFeaturedImg,
   blogImage1,
   blogImage2,
   blogImage3,
   blogImage4,
   blogImage5,
 } from './assets/';
-import CourseCard from './components/CourseCard';
-import Courses from './components/Courses';
 
 function App() {
   const [posts, setPosts] = useState([
@@ -78,6 +77,7 @@ function App() {
         <Route path="/pathways" element={<Pathways />}>
           <Route path="/pathways/:category" element={<Home />} />
         </Route>
+        <Route path="/login" element={<Login />} />
       </Route>
     </Routes>
   );
