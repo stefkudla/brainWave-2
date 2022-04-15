@@ -6,12 +6,12 @@ import './index.css';
 import ScrollToTop from './components/ScrollToTop';
 
 render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <ScrollToTop>
-        <App />
-      </ScrollToTop>
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <BrowserRouter>
+            <ScrollToTop>
+                <App />
+            </ScrollToTop>
+        </BrowserRouter>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
