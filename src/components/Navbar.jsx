@@ -43,7 +43,7 @@ const Navbar = () => {
                     Log in
                 </Link>
                 <Link
-                    to="/pathways"
+                    to="register"
                     className="bg-accent rounded-sm px-7 py-3 transition
           hover:text-slate-100 text-white hover:bg-slate-800 whitespace-nowrap font-medium"
                     onClick={() => setToggleMenu(!toggleMenu)}

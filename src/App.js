@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import BlogPost from './components/BlogPost';
 import Layout from './components/Layout';
-import { Home, Blog, Pathways, Login } from './pages/index';
+import { Home, Blog, Pathways, Login, Register } from './pages/index';
 import {
     blogFeaturedImg,
     blogImage1,
@@ -75,6 +75,7 @@ function App() {
                     <Route path="/pathways/:category" element={<Home />} />
                 </Route>
                 <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
             </Route>
         </Routes>
     );
