@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/brainWave-logo.png';
+import logo from '../assets/images/brainWave-logo.png';
 
 const Footer = () => {
     return (

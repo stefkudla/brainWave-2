@@ -17,3 +17,7 @@ export { default as musicCourse3 } from './music-course-3.jpg';
 export { default as softwareCourse1 } from './software-course-1.jpg';
 export { default as softwareCourse2 } from './software-course-2.jpg';
 export { default as softwareCourse3 } from './software-course-3.jpg';
+
+export { default as Human1 } from './Human-01.png';
+export { default as Human2 } from './Human-02.png';
+export { default as Human3 } from './Human-03.png';

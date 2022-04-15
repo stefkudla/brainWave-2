@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../assets/brainWave-logo.png';
+import logo from '../assets/images/brainWave-logo.png';
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);

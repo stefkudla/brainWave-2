@@ -11,7 +11,7 @@ import {
     blogImage3,
     blogImage4,
     blogImage5
-} from './assets/';
+} from './assets/images';
 
 function App() {
     const [posts, setPosts] = useState([

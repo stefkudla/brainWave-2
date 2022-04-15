@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../assets/brainWave-Hero.png';
+import heroImage from '../assets/images/brainWave-Hero.png';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
