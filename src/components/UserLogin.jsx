@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { MdEmail, MdLock } from 'react-icons/md';
 
 const UserLogin = () => {
     return (
@@ -10,9 +12,12 @@ const UserLogin = () => {
                 <input
                     type="email"
                     id="email"
-                    className="p-2.5 text-sm border-2 border-gray-300 rounded"
-                    placeholder="Enter your email"
+                    className="p-2.5 pl-6 text-sm border-2 border-gray-300 rounded"
+                    placeholder="Email"
                 />
+                <div className="absolute">
+                    <MdEmail className="mt-[38px] ml-1.5 text-gray-400" />
+                </div>
             </div>
             <div className="flex flex-col mb-3">
                 <label htmlFor="password" className="text-primary text-sm mb-1">
@@ -21,9 +26,12 @@ const UserLogin = () => {
                 <input
                     type="password"
                     id="password"
-                    className="p-2.5 text-sm border-2 border-gray-300 rounded"
-                    placeholder="Enter your password"
+                    className="p-2.5 pl-6 text-sm border-2 border-gray-300 rounded"
+                    placeholder="Password"
                 />
+                <div className="absolute">
+                    <MdLock className="mt-[37px] ml-1.5 text-gray-400" />
+                </div>
             </div>
             <div className="flex justify-between my-1">
                 <div className="flex items-center">
@@ -57,13 +65,13 @@ const UserLogin = () => {
             <div>
                 <p className="text-sm text-primary">
                     Don't have an account?
-                    <a
-                        href="#"
+                    <Link
+                        to="/register"
                         className="font-bold text-gray-800 hover:opacity-70 transition-opacity"
                     >
                         {' '}
                         Sign up for free!
-                    </a>
+                    </Link>
                 </p>
             </div>
         </form>
