@@ -11,7 +11,7 @@ import {
     Login,
     Register,
     ResetPassword
-} from './pages/index';
+} from '../src/pages/index.js';
 import {
     blogFeaturedImg,
     blogImage1,
