@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="src/assets/brainWave-logo.png" alt="Logo">
+    <img src="src/assets/images/brainWave-logo.png" alt="Logo">
   </a>
 
 <h3 align="center">brainWave</h3>
@@ -219,5 +219,5 @@ Project Link: [https://github.com/stefkudla/brainWave-2](https://github.com/stef
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/stefankudla/
-[product-screenshot]: src/assets/pathways-snippet.png
+[product-screenshot]: src/assets/images/pathways-snippet.png
 
