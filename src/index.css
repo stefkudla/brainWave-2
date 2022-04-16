@@ -5,33 +5,33 @@
 .root,
 #root,
 #docs-root {
-  @apply light;
+    @apply light;
 }
 
 .dark {
-  --primary: #ffffff;
-  --secondary: #edf2f7;
-  --background: #333333;
-  --accent: #3984ff;
+    --primary: #ffffff;
+    --secondary: #edf2f7;
+    --background: #333333;
+    --accent: #3984ff;
 }
 
 .light {
-  --primary: #505050;
-  --secondary: #000;
-  --background: #e5e5e5;
-  --accent: #3984ff;
+    --primary: #505050;
+    --secondary: #000;
+    --background: #e5e5e5;
+    --accent: #3984ff;
 }
 
 .active-category {
-  position: relative;
-  color: #ffffff;
-  background-color: rgb(52, 211, 153);
-  border-radius: 5px;
-  cursor: pointer;
+    position: relative;
+    color: #ffffff;
+    background-color: rgb(52, 211, 153);
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 @layer base {
-  html {
-    font-family: Roboto, sans-serif;
-  }
+    html {
+        font-family: Roboto, sans-serif;
+    }
 }
