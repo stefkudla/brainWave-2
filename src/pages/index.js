@@ -1,6 +1,6 @@
 export { default as Home } from './Home';
-export { default as Blog } from './blog';
-export { default as Pathways } from './pathways';
-export { default as Login } from './login';
-export { default as Register } from './register';
-export { default as ResetPassword } from './reset-password';
+export { default as Blog } from './Blog';
+export { default as Pathways } from './Pathways';
+export { default as Login } from './Login';
+export { default as Register } from './Register';
+export { default as ResetPassword } from './ResetPassword';
