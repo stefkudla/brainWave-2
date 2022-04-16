@@ -1,5 +1,5 @@
 import React from 'react';
-import blogHero from '../assets/blog-hero.jpg';
+import blogHero from '../assets/images/blog-hero.jpg';
 
 const BlogHeader = ({ post }) => {
     return (

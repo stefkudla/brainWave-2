@@ -1,5 +1,5 @@
 import { MdPlayCircle } from 'react-icons/md';
-import pathwayHero from '../assets/pathways-hero.png';
+import pathwayHero from '../assets/images/pathways-hero.png';
 import floatingBooks from '../assets/floating-books.mp4';
 import { useState } from 'react';
 import { RiCloseLine } from 'react-icons/ri';

@@ -11,7 +11,7 @@ import {
     softwareCourse1,
     softwareCourse2,
     softwareCourse3
-} from '../assets';
+} from '../assets/images';
 
 const CourseList = ({ filter }) => {
     const courses = [

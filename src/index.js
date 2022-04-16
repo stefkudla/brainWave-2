@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './index.css';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './util/ScrollToTop';
 
 render(
     <React.StrictMode>

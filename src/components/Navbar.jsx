@@ -1,10 +1,26 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../assets/brainWave-logo.png';
+import logo from '../assets/images/brainWave-logo.png';
+import { useAuth } from '../contexts/AuthContext';
 
 const Navbar = () => {
+    const { currentUser, logout } = useAuth();
+    const [error, setError] = useState('');
     const [toggleMenu, setToggleMenu] = useState(false);
+    const navigate = useNavigate();
+
+    async function handleLogout() {
+        setError('');
+
+        try {
+            await logout();
+            navigate('/login');
+            setToggleMenu(!toggleMenu);
+        } catch (error) {
+            setError(error);
+        }
+    }
 
     const Menu = () => {
         const menuItems = [
@@ -35,15 +51,24 @@ const Navbar = () => {
     const Login = () => {
         return (
             <>
+                {currentUser ? (
+                    <a
+                        onClick={handleLogout}
+                        className="text-slate-800 hover:opacity-60 font-medium cursor-pointer mr-6 transition-all whitespace-nowrap"
+                    >
+                        Log Out
+                    </a>
+                ) : (
+                    <Link
+                        to="login"
+                        className="text-slate-800 hover:opacity-60 font-medium cursor-pointer mr-6 transition-all whitespace-nowrap"
+                        onClick={() => setToggleMenu(!toggleMenu)}
+                    >
+                        Log in
+                    </Link>
+                )}
                 <Link
-                    to="login"
-                    className="text-slate-800 hover:opacity-60 font-medium cursor-pointer mr-6 transition-all whitespace-nowrap"
-                    onClick={() => setToggleMenu(!toggleMenu)}
-                >
-                    Log in
-                </Link>
-                <Link
-                    to="/pathways"
+                    to="register"
                     className="bg-accent rounded-sm px-7 py-3 transition
           hover:text-slate-100 text-white hover:bg-slate-800 whitespace-nowrap font-medium"
                     onClick={() => setToggleMenu(!toggleMenu)}

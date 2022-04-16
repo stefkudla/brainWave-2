@@ -1,9 +1,17 @@
 import React from 'react';
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import PrivateRoute from './components/PrivateRoute';
 import BlogPost from './components/BlogPost';
 import Layout from './components/Layout';
-import { Home, Blog, Pathways, Login } from './pages/index';
+import {
+    Home,
+    Blog,
+    Pathways,
+    Login,
+    Register,
+    ResetPassword
+} from './pages/index';
 import {
     blogFeaturedImg,
     blogImage1,
@@ -11,7 +19,8 @@ import {
     blogImage3,
     blogImage4,
     blogImage5
-} from './assets/';
+} from './assets/images';
+import { AuthProvider } from './contexts/AuthContext';
 
 function App() {
     const [posts, setPosts] = useState([
@@ -66,17 +75,24 @@ function App() {
     ]);
 
     return (
-        <Routes>
-            <Route path="/" element={<Layout />}>
-                <Route index element={<Home />} />
-                <Route path="blog" element={<Blog posts={posts} />} />
-                <Route path="/:postID" element={<BlogPost post={posts} />} />
-                <Route path="/pathways" element={<Pathways />}>
-                    <Route path="/pathways/:category" element={<Home />} />
+        <AuthProvider>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="blog" element={<Blog posts={posts} />} />
+                    <Route
+                        path="/:postID"
+                        element={<BlogPost post={posts} />}
+                    />
+                    <Route path="/pathways" element={<Pathways />}>
+                        <Route path="/pathways/:category" element={<Home />} />
+                    </Route>
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
+                    <Route path="/reset-password" element={<ResetPassword />} />
                 </Route>
-                <Route path="/login" element={<Login />} />
-            </Route>
-        </Routes>
+            </Routes>
+        </AuthProvider>
     );
 }
 

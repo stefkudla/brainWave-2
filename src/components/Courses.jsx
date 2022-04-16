@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import CourseCard from './CourseCard';
 import CourseList from './CourseList';
 
 const Courses = () => {
