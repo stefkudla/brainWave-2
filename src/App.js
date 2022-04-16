@@ -4,14 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
 import BlogPost from './components/BlogPost';
 import Layout from './components/Layout';
-import {
-    Home,
-    Blog,
-    Pathways,
-    Login,
-    Register,
-    ResetPassword
-} from './pages/index';
+import { Blog, Pathways, Login, Register, ResetPassword } from './pages/index';
+import Home from './pages/home';
 import {
     blogFeaturedImg,
     blogImage1,
