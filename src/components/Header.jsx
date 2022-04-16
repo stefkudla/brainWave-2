@@ -17,7 +17,7 @@ const Header = () => {
                     </p>
                     <div className="mt-8">
                         <Link
-                            to="/blog"
+                            to="/register"
                             className="mt-8 transition-all sm:text-lg bg-accent px-8 py-3 text-white rounded-sm font-medium hover:opacity-80"
                         >
                             Start learning
