@@ -27,7 +27,10 @@ const ForgotPassword = () => {
     return (
         <>
             {(error || message) && <p>{error || message}</p>}
-            <form className="flex flex-col w-[380px]" onSubmit={handleSubmit}>
+            <form
+                className="flex flex-col w-[380px] px-4 sm:px-1"
+                onSubmit={handleSubmit}
+            >
                 <div className="flex flex-col mb-3">
                     <label
                         htmlFor="email"

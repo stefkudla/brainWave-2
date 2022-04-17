@@ -34,7 +34,10 @@ const UserLogin = () => {
                     {error}. Please try again.
                 </p>
             )}
-            <form className="flex flex-col w-[380px]" onSubmit={handleSubmit}>
+            <form
+                className="flex flex-col w-[380px] px-4 sm:px-0"
+                onSubmit={handleSubmit}
+            >
                 <div className="flex flex-col mb-3">
                     <label
                         htmlFor="email"
