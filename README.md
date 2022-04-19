@@ -148,7 +148,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [x] Build the UI with React and TailwindCSS, referencing the Figma Design
 - [x] Implement React Router V6 to navigate around the different pages and blog posts
-- [ ] Implement user authentication with Firebase
+- [x] Implement user authentication with Firebase
+- [ ] Create Course Dashboard
 
 <!-- See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues). -->
 
