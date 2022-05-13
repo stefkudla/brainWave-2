@@ -27,7 +27,7 @@ const CTA = () => {
                 </form>
                 <div className="w-60 mt-8 flex justify-between">
                     <a
-                        href="https://stefankudla.com/contact"
+                        href="https://stefankudla.com/"
                         className="text-primary hover:text-gray-800"
                     >
                         Contact
