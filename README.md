@@ -7,6 +7,8 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
+
+
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -20,8 +22,9 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url] -->
 <!-- [![MIT License][license-shield]][license-url] -->
-
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
+
 
 <!-- PROJECT LOGO -->
 <br />
@@ -46,9 +49,11 @@
   </p>
 </div>
 
+
+
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents testing</summary>
+  <summary>Table of Contents</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -72,8 +77,9 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
 
+
+<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://brainwave2.netlify.app)
@@ -84,17 +90,20 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+
+
 ### Built With
 
--   [React.js](https://reactjs.org/)
--   [TailwindCSS](https://tailwindcss.com/)
--   [React Router](https://reactrouter.com/)
--   [Figma](https://www.figma.com/file/qP90lqhxDcI9jwv50izUPr/Landing-Page-E-Learning?node-id=4%3A5) Design by [Cell Melton](https://cellmelton.com)
+* [React.js](https://reactjs.org/)
+* [TailwindCSS](https://tailwindcss.com/)
+* [React Router](https://reactrouter.com/)
+* [Figma](https://www.figma.com/file/qP90lqhxDcI9jwv50izUPr/Landing-Page-E-Learning?node-id=4%3A5) Design by [Cell Melton](https://cellmelton.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
@@ -103,24 +112,25 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-
--   npm
-    ```sh
-    npm install npm@latest -g
-    ```
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
 ### Installation
 
 1. Clone the repo
-    ```sh
-    git clone https://github.com/stefkudla/brainWave-2/
-    ```
+   ```sh
+   git clone https://github.com/stefkudla/brainWave-2/
+   ```
 2. Install NPM packages
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
 
 <!-- USAGE EXAMPLES -->
 <!-- ## Usage
@@ -131,21 +141,23 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
 
-<!-- ROADMAP -->
 
+
+<!-- ROADMAP -->
 ## Roadmap
 
--   [x] Build the UI with React and TailwindCSS, referencing the Figma Design
--   [x] Implement React Router V6 to navigate around the different pages and blog posts
--   [x] Implement user authentication with Firebase
--   [ ] Create Course Dashboard
+- [x] Build the UI with React and TailwindCSS, referencing the Figma Design
+- [x] Implement React Router V6 to navigate around the different pages and blog posts
+- [x] Implement user authentication with Firebase
+- [ ] Create Course Dashboard
 
 <!-- See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues). -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
 
+
+<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -161,6 +173,8 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+
+
 <!-- LICENSE -->
 <!-- ## License
 
@@ -168,8 +182,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information. -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- CONTACT -->
 
+
+<!-- CONTACT -->
 ## Contact
 
 Stefan Kudla - [LinkedIn](https://www.linkedin.com/in/stefankudla/) - stefan@stefankudla.com
@@ -177,6 +192,8 @@ Stefan Kudla - [LinkedIn](https://www.linkedin.com/in/stefankudla/) - stefan@ste
 Project Link: [https://github.com/stefkudla/brainWave-2](https://github.com/stefkudla/brainWave-2)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
 
 <!-- ACKNOWLEDGMENTS -->
 <!-- ## Acknowledgments
@@ -187,9 +204,10 @@ Project Link: [https://github.com/stefkudla/brainWave-2](https://github.com/stef
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
 [contributors-shield]: https://img.shields.io/github/stefkudla/brainWave-2/repo_name.svg?style=for-the-badge
 [contributors-url]: https://github.com/stefkudla/brainWave-2/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
@@ -203,3 +221,4 @@ Project Link: [https://github.com/stefkudla/brainWave-2](https://github.com/stef
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/stefankudla/
 [product-screenshot]: src/assets/images/pathways-snippet.png
+
