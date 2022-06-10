@@ -53,7 +53,7 @@
     <li>
       <a href="#about-the-project">About The Project 1</a>
       <ul>
-        <li><a href="#built-with">Built With 2</a></li>
+        <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
