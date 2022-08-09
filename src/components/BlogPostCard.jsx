@@ -6,10 +6,10 @@ const BlogPostCard = ({ post }) => {
     return (
         <div>
             <div className="container flex flex-col max-w-sm mx-auto border border-blue-200 rounded-md">
-                <div className="">
+                <div className="h-40 flex-1 w-full">
                     <img
                         src={post.imgSrc}
-                        className="rounded-t-md"
+                        className="rounded-t-md object-contain"
                         alt={post.title}
                     />
                 </div>
